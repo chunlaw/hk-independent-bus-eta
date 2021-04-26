@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/hk-independent-bus-eta/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/hk-independent-bus-eta/static/js/main.07f470ea.chunk.js",
-    "main.js.map": "/hk-independent-bus-eta/static/js/main.07f470ea.chunk.js.map",
+    "main.js": "/hk-independent-bus-eta/static/js/main.29741b56.chunk.js",
+    "main.js.map": "/hk-independent-bus-eta/static/js/main.29741b56.chunk.js.map",
     "runtime-main.js": "/hk-independent-bus-eta/static/js/runtime-main.1824452f.js",
     "runtime-main.js.map": "/hk-independent-bus-eta/static/js/runtime-main.1824452f.js.map",
-    "static/js/2.21fb6ad8.chunk.js": "/hk-independent-bus-eta/static/js/2.21fb6ad8.chunk.js",
-    "static/js/2.21fb6ad8.chunk.js.map": "/hk-independent-bus-eta/static/js/2.21fb6ad8.chunk.js.map",
+    "static/js/2.6d94b0f2.chunk.js": "/hk-independent-bus-eta/static/js/2.6d94b0f2.chunk.js",
+    "static/js/2.6d94b0f2.chunk.js.map": "/hk-independent-bus-eta/static/js/2.6d94b0f2.chunk.js.map",
     "static/js/3.9a48d5d3.chunk.js": "/hk-independent-bus-eta/static/js/3.9a48d5d3.chunk.js",
     "static/js/3.9a48d5d3.chunk.js.map": "/hk-independent-bus-eta/static/js/3.9a48d5d3.chunk.js.map",
     "index.html": "/hk-independent-bus-eta/index.html",
     "static/css/main.8c8b27cf.chunk.css.map": "/hk-independent-bus-eta/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.21fb6ad8.chunk.js.LICENSE.txt": "/hk-independent-bus-eta/static/js/2.21fb6ad8.chunk.js.LICENSE.txt"
+    "static/js/2.6d94b0f2.chunk.js.LICENSE.txt": "/hk-independent-bus-eta/static/js/2.6d94b0f2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1824452f.js",
-    "static/js/2.21fb6ad8.chunk.js",
+    "static/js/2.6d94b0f2.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.07f470ea.chunk.js"
+    "static/js/main.29741b56.chunk.js"
   ]
 }
