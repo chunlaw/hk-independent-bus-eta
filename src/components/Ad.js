@@ -34,7 +34,6 @@ const useStyles = makeStyles(theme => ({
         backgroundPosition: 'center',
         backgroundImage: 'url(https://picsum.photos/800/200)',
         height: 60,
-        backgroundColor: '#F00',
     }
 }))
 
