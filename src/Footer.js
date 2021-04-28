@@ -10,9 +10,11 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import AppContext from './AppContext'
+import {makeStyles} from "@material-ui/core/styles/index";
 
 const Footer = () => {
   const { t, i18n } = useTranslation()
+  const classes = useStyles()
   const location = useLocation()
   const { selectedRoute } = useContext ( AppContext ) 
   
@@ -20,6 +22,7 @@ const Footer = () => {
     <BottomNavigation
       value={location.pathname}
       showLabels={true}
+      className={classes.footer}
     >
       <BottomNavigationAction
         label={t("常用")}
@@ -52,5 +55,13 @@ const Footer = () => {
     </BottomNavigation>
   )
 }
+
+const useStyles = makeStyles(theme => ({
+  footer: {
+      backgroundColor: '#bbb',
+      minHeight:'50px',
+      height: '8vh'
+  }
+}))
 
 export default Footer

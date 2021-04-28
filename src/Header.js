@@ -63,6 +63,13 @@ const useStyles = makeStyles(theme => ({
       color: 'black',
       textDecoration: 'none',
     },
+    '& input': {
+      color: 'black',
+    },
+    backgroundColor: '#FFE000',
+    minHeight:'80px',
+    height:'10vh',
+    color: 'black',
     display: 'flex',
     justifyContent: 'space-between',
     zIndex: theme.zIndex.drawer * 2

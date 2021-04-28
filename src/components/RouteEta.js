@@ -91,7 +91,12 @@ const RouteEta = () => {
               TransitionProps={{unmountOnExit: true}}
               ref={el => {accordionRef.current[idx] = el}}
             >
-              <AccordionSummary>{stopList[stop].name[i18n.language]}</AccordionSummary>
+              <AccordionSummary className={classes.rowOutter}>
+                  <React.Fragment>
+                      <div className={classes.circle}></div>
+                      {stopList[stop].name[i18n.language]}
+                  </React.Fragment>
+              </AccordionSummary>
               <AccordionDetails>
                 <TimeReport 
                   route={route}
@@ -217,6 +222,25 @@ const AccordionDetails = withStyles((theme) => ({
 }))(MuiAccordionDetails);
 
 const useStyles = makeStyles(theme => ({
+  rowOutter: {
+    borderRadius: 0,
+    border: 0,
+    borderLeft: '3px solid black',
+    marginLeft: 20,
+    position: 'relative'
+  },
+  circle: {
+    position: 'absolute',
+    left: 11.5,
+    top: '50%',
+    transform: 'translateY(-50%)',
+    border: '3px solid black',
+    width: 20,
+    height: 20,
+    borderRadius: '100%',
+    zIndex: 100,
+    backgroundColor: 'white'
+  },
   boxContainer: {
     overflowY: 'scroll'
   },

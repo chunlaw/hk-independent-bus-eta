@@ -43,11 +43,13 @@ const RouteList = () => {
   const { routeList, searchRoute } = useContext(AppContext)
   const targetRouteList = Object.entries(routeList).filter(
     element => element[0].startsWith(searchRoute.toUpperCase())
-  ) 
+  )
+  const classes = useStyles()
 
   const itemData = createItemData(targetRouteList)
   return (
     <List
+      className={classes.searchTable}
       height={330}
       itemCount={targetRouteList.length}
       itemSize={69}
@@ -72,6 +74,9 @@ const RouteBoard = () => {
 export default RouteBoard
 
 const useStyles = makeStyles (theme => ({
+  searchTable: {
+    flex:1,
+  },
   cardContent: {
     padding: '8px 16px',
   }

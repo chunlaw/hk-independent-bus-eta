@@ -24,19 +24,20 @@ const KeyButton = ({k, handleClick, disabled = false}) => {
       disabled={disabled}
     >
       {k === 'b' ? <BackspaceOutlinedIcon/> : 
-        k === '-' ? t('取消') : k}
+        k === '-' ? t('C') : k}
     </Button>
   )
 }
 
 const RouteNumPad = () => {
   const { searchRoute, updateSearchRouteByButton, possibleChar } = useContext( AppContext )
+  const classes = useStyles()
 
   return (
     <Grid container spacing={0}>
     {
       '789456123-0b'.split('').map( k => (
-        <Grid item xs={4} key={'input-'+k}>
+        <Grid item xs={4} key={'input-'+k} className={classes.gridItem}>
           <KeyButton
             k={k}
             handleClick={updateSearchRouteByButton}
@@ -56,7 +57,8 @@ const RouteNumPad = () => {
 
 const RouteAlphabetPad = () => {
   const { updateSearchRouteByButton, possibleChar } = useContext( AppContext )
-  
+
+
   return (
     <Grid container spacing={1}>
       {
@@ -93,10 +95,13 @@ const RouteInputPad = () => {
 export default RouteInputPad
 
 const useStyles = makeStyles(theme => ({
+  gridItem: {
+    padding: 3
+  },
   boxContainer: {
+    height: 207,
     display: 'flex',
     flexDirection: 'row',
-    height: '180px',
     justifyContent: 'space-around'
   },
   numPadContainer: {
@@ -110,7 +115,15 @@ const useStyles = makeStyles(theme => ({
   },
   button: {
     width: '100%',
-    height: 42,
-    borderRadius: 'unset'
+    height: 45,
+    backgroundColor: '#333338',
+    fontFamily: "'Noto Sans', sans-serif",
+    fontWeight: 100,
+    color: 'white',
+    borderRadius: 7,
+      '&[disabled]':{
+        backgroundColor: '#CFCFCF',
+          color: '#FFFFFF'
+      }
   }
 }))

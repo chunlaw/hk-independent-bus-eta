@@ -96,6 +96,7 @@ const App = () => {
             <CssBaseline />
             <Header />
             <PageSwitch />
+            <Ad/>
             <Footer />
           </Route>
         </Router>
@@ -112,7 +113,7 @@ const Theme = createMuiTheme({
   },
   palette: {
     background: {
-      default: "#ffff00" // yellow
+      default: "#f0f0f7" // yellow
     }
   }
 })
