@@ -1,4 +1,5 @@
 import moment from 'moment'
+import eng2Chi from './kmbNaming.json'
 
 const KmbApi = {
   co: 'kmb',
@@ -10,17 +11,18 @@ const KmbApi = {
       response => response.json()
     ).then( ({data}) => 
       data.reduce( (routeList, element) => {
+        console.log(eng2Chi[element.dest_tc.replace('/', '／')])
         routeList[[element.route, element.service_type, element.bound].join('+')] = {
           route: element.route,
           co: 'kmb',
           bound: element.bound,
           orig: {
             en: element.orig_en.replace('/','／'),
-            zh: element.orig_tc.replace('/','／')
+            zh: eng2Chi[element.orig_en.replace('/','／')] || element.orig_en.replace('/','／')
           },
           dest: {
             en: element.dest_en.replace('/','／'),
-            zh: element.dest_tc.replace('/','／')
+            zh: eng2Chi[element.dest_en.replace('/','／')] || element.dest_en.replace('/','／')
           },
           stops: [],
           serviceType: parseInt(element.service_type)
