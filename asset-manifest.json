@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hk-independent-bus-eta/static/css/main.f75dbd95.chunk.css",
-    "main.js": "/hk-independent-bus-eta/static/js/main.b230ed66.chunk.js",
+    "main.js": "/hk-independent-bus-eta/static/js/main.11b251a9.chunk.js",
     "runtime-main.js": "/hk-independent-bus-eta/static/js/runtime-main.a2d43d38.js",
     "static/js/2.4b7d1f40.chunk.js": "/hk-independent-bus-eta/static/js/2.4b7d1f40.chunk.js",
     "static/js/3.340c0244.chunk.js": "/hk-independent-bus-eta/static/js/3.340c0244.chunk.js",
@@ -13,6 +13,6 @@
     "static/js/runtime-main.a2d43d38.js",
     "static/js/2.4b7d1f40.chunk.js",
     "static/css/main.f75dbd95.chunk.css",
-    "static/js/main.b230ed66.chunk.js"
+    "static/js/main.11b251a9.chunk.js"
   ]
 }
