@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/hk-independent-bus-eta/static/css/main.f75dbd95.chunk.css",
-    "main.js": "/hk-independent-bus-eta/static/js/main.5c87a5a0.chunk.js",
-    "runtime-main.js": "/hk-independent-bus-eta/static/js/runtime-main.a2d43d38.js",
-    "static/js/2.4b7d1f40.chunk.js": "/hk-independent-bus-eta/static/js/2.4b7d1f40.chunk.js",
-    "static/js/3.340c0244.chunk.js": "/hk-independent-bus-eta/static/js/3.340c0244.chunk.js",
+    "main.css": "/hk-independent-bus-eta/static/css/main.31c5b48e.chunk.css",
+    "main.js": "/hk-independent-bus-eta/static/js/main.76763a64.chunk.js",
+    "runtime-main.js": "/hk-independent-bus-eta/static/js/runtime-main.28007d3c.js",
+    "static/js/2.2ca24e5a.chunk.js": "/hk-independent-bus-eta/static/js/2.2ca24e5a.chunk.js",
+    "static/js/3.cd16c8e9.chunk.js": "/hk-independent-bus-eta/static/js/3.cd16c8e9.chunk.js",
     "index.html": "/hk-independent-bus-eta/index.html",
     "service-worker.js": "/hk-independent-bus-eta/service-worker.js",
-    "static/js/2.4b7d1f40.chunk.js.LICENSE.txt": "/hk-independent-bus-eta/static/js/2.4b7d1f40.chunk.js.LICENSE.txt"
+    "static/js/2.2ca24e5a.chunk.js.LICENSE.txt": "/hk-independent-bus-eta/static/js/2.2ca24e5a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a2d43d38.js",
-    "static/js/2.4b7d1f40.chunk.js",
-    "static/css/main.f75dbd95.chunk.css",
-    "static/js/main.5c87a5a0.chunk.js"
+    "static/js/runtime-main.28007d3c.js",
+    "static/js/2.2ca24e5a.chunk.js",
+    "static/css/main.31c5b48e.chunk.css",
+    "static/js/main.76763a64.chunk.js"
   ]
 }
