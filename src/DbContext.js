@@ -78,9 +78,11 @@ export const DbProvider = ( props ) => {
 export default DbContext
 
 const decompressJsonString = (txt) => {
-  let ret = decompressFromBase64(txt)
-  if ( ret && ret.length && ret !== 'null' && txt.endsWith('=') ){
+  try {
+    let ret = decompressFromBase64(txt)
     return JSON.parse(ret)
+  } catch (e) {
+    // return null if no valid JSON string
+    return null
   }
-  return null
 }
