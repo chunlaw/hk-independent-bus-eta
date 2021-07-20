@@ -1,9 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react'
 import {
+  Card,
+  Typography,
   CircularProgress,
   List,
   Paper
 } from '@material-ui/core'
+import { useTranslation } from 'react-i18next'
 import { makeStyles } from '@material-ui/core/styles'
 import AppContext from '../AppContext'
 import { getDistance } from '../utils'
@@ -68,8 +71,16 @@ const Home = () => {
   }, [])
 
   const classes = useStyles()
+  const { t } = useTranslation()
   return (
     <Paper className={classes.root}>
+      <Card
+        className={classes.upgradeContainer}
+        onClick={() => {window.location.href = "https://hkbus.app"}}
+      >
+        <Typography variant="subtitle1">{t('升級最新介面')}</Typography>
+        <Typography variant="caption">{t('秉持無廣告簡潔介面')} - <a href="https://hkbus.app">hkbus.app</a></Typography>
+      </Card>
       <List className={classes.list}>
       {
         selectedRoutes.map( selectedRoute => (
@@ -92,6 +103,19 @@ const useStyles = makeStyles ( theme => ({
     height: 'calc(100vh - 120px)',
     overflowY: 'scroll',
     textAlign: 'center'
+  },
+  upgradeContainer: {
+    width: "100%",
+    flexDirection: "column",
+    '& a': {
+      textDecoration: 'none'
+    },
+    '& .MuiTypography-subtitle1': {
+      fontWeight: '600'
+    },
+    '& .MuiTypography-caption': {
+      fontWeight: '600'
+    }
   }
 }))
 

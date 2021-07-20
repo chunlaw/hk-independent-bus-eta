@@ -1,5 +1,9 @@
 # 香港 - 獨立巴士預報
 
+## 新 repository
+
+此專案已移施到新的 [Github](https://github.com/hkbus/hk-independent-bus-eta)，新 Github 將秉持無廣告宗旨，繼續提供巴士線及到站預報資料。
+
 [![React](https://badges.aleen42.com/src/react.svg)](http://reactjs.org/) 
 [![Test](https://github.com/chunlaw/hk-independent-bus-eta/actions/workflows/node.js.yml/badge.svg)](https://chunlaw.github.io/hk-independent-bus-eta)
 
